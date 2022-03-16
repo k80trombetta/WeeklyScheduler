@@ -5,7 +5,7 @@ const config = require('./config');
 
 
 
-// Converts time to string representation of time with am or pm
+// Convert time to string representation of time with am or pm
 function timeToString(t) {  // v contains start/end time as a string or a date
     let time = undefined;
     let amPm = null;
