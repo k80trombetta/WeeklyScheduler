@@ -27,4 +27,4 @@ I am adding in more flexibility into the weeklySchedule.js file so it is more fl
 
 9. Project can handle input file containing multiple tabs, as well as multiple subjects/departments coming in on the command line. It can locate the command line subject(s) corresponding tab(s).
 
-10. It will still draw sections with missing info, as long as that info is not necessary to put on the schedule.
+10. It will still draw sections with missing info, as long as that info is not necessary to put on the schedule.   
