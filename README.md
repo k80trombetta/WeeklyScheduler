@@ -1,6 +1,10 @@
 # WeeklyScheduler
 Node project extracts and processes course data from an input Excel file, and produces a new Excel file containing a visually pleasing weekly schedule and report
 
+# Installation
+Install node in project directory
+https://nodejs.org/en/download/
+
 # Current Work
 I am adding in more flexibility into the weeklySchedule.js file so it is more flexible and does not break so easily. Previous versions of the project expected the input file to come in a specific format. The flexibility I am adding anticipates various configurations of the input file.
 
