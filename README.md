@@ -8,7 +8,7 @@ https://nodejs.org/en/download/
 # Current Work
 I am adding in more flexibility into the weeklySchedule.js file so it is more flexible and does not break so easily. Previous versions of the project expected the input file to come in a specific format. The flexibility I am adding anticipates various configurations of the input file.
 
-# Changes included so far from previous versions
+# Changes from previous versions
 1. Searching for attribute row instead of assuming its location
 
 2. Seaching for specific required attributes needed for processing, instead of assuming their presence.
