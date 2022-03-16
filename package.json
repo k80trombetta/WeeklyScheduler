@@ -1,0 +1,15 @@
+{
+  "name": "week1_test_project",
+  "version": "1.0.0",
+  "description": "Test Project",
+  "main": "weeklySchedule.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katie Trombetta",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^4.2.0",
+    "moment": "^2.29.1"
+  }
+}
