@@ -1,30 +1,109 @@
-# WeeklyScheduler
-Node project extracts and processes course data from an input Excel file, and produces a new Excel file containing a visually pleasing weekly schedule and report
+#weeklyScheduler
 
-# Installation
-Install node in project directory
-https://nodejs.org/en/download/
+weeklyScheduler is a JavaScript program that generates an Excel file in the form of a graphical weekly schedule.
 
-# Current Work
-I am adding in more flexibility into the weeklySchedule.js file so it is more flexible and does not break so easily. Previous versions of the project expected the input file to come in a specific format. The flexibility I am adding anticipates various configurations of the input file.
+It accepts as input a tabular format Excel file with department course data as the rows.
 
-# Changes from previous versions
-1. Searching for attribute row instead of assuming its location
+It extracts data from the input file to generate the output file.
 
-2. Seaching for specific required attributes needed for processing, instead of assuming their presence.
+Customized weekly schedules and reports for abnormal course data are generated.
 
-3. Using attribute indices to access specific columns instead of assuming hard coded locations.
+##Usage
+* Install node.js and import node modules into project directory
 
-4. Assuming sections may be unordered.
+* To color code sections by Instructor, run
 
-5. Section START TIME and END TIME values may be formatted as a Date object or String that can be parsed as a valid time.
+```
+node.js Fall_2022_CS_Reflist_3.1.22.xlsx CS "ASTR PHYS" I
+```
 
-6. Anticipation of invalid/missing cells. If cells necessary to schedule a course are missing, that course will be omitted from a regular schedule tab in the output file, and identified in a separate report tab in the output file.
+* To color code sections by Course (Subject + Catalog), run
 
-7. Anticipation of units/hours discrepancies. Calculations are executed to determine if course units/hour are reasonable. If no,t the section is identified in a report tab while still being drawn on the regular schedule.
+```
+node.js Fall_2022_CS_Reflist_3.1.22.xlsx "ASTR PHYS" C
+```
 
-8. Project accepts more arguments from the command line instead of being hard coded. Ultimately, all data needed for the program to run will come in on the command line. No files will be saved in the project directory (config.json, input file, etc.).
+## Files/Directories
+1. Excel_Extra_Input_Files: contains older input files to work with
+   
+    Note: Input Excel we want to run with must be located in main directory
+   
 
-9. Project can handle input file containing multiple tabs, as well as multiple subjects/departments coming in on the command line. It can locate the command line subject(s) corresponding tab(s).
+2. Excel_Output: output files are saved here
 
-10. It will still draw sections with missing info, as long as that info is not necessary to put on the schedule.   
+
+3. Config files must be located in main directory
+##Notes
+
+###Report Worksheets
+1. Courses related by auto enroll
+    1. Sections in an auto group that are missing the units field, can infer units from 
+       a related component.
+    2. Main component sections that cannot be matched to their listed auto enroll components
+       can still be drawn to the schedule but will be flagged on the report.
+    3. Section units are adjusted (if possible) according to the reported number of auto
+       enroll sections by the main component, for that group.
+       
+
+2. Dual Reports
+    
+    Courses can be drawn to the schedule but also flagged
+   
+###Regular Schedule Worksheets
+1. Sections with missing fields
+   1. Required fields to be drawn 
+      
+      ```Term, Subject, Catalog, Pat, START TIME, END TIME```
+        
+    2. Non-required missing fields will be omitted from schedule block text.
+       
+        ```Component, Section, Last, Facil ID```
+    
+
+2. Courses related by auto enroll
+   1. Auto enroll components with issues with their main components can still be drawn to the schedule,
+      as long as all of their required scheduling info is present.
+   2. Main component courses with issues with their auto enroll components can still be drawn (under the same conditions as above).
+
+
+3. Courses without colors 
+   
+   Courses that cannot be matched to an Instructor or Course color will be drawn in gray.
+
+###Flexibility
+* Matches department/subject command line arguments to correct tab in input Excel file
+  
+
+* Order of columns in input  Excel file does not matter
+  
+
+* Order of rows/auto enroll group components does not matter
+  
+
+* Time is accepted in various formats, including:
+    * hh:mm:ss A -> 13:00:01 pm, 1:10:45 aM 
+    * hh:mm:ssA  -> 13:00:01pm, 1:10:45aM
+    * hh:mm:ss   -> 13:00:01, 1:10:45
+    * hh:m A     -> 13:00 pm, 1:10 aM
+    * hh:mA      -> 13:00pm, 1:10aM
+    * hh:m       -> 13:00, 1:10
+    * h A        -> 13 pm, 1 aM
+    * hA         -> 13pm, 1aM
+    * h          -> 13, 1
+    
+
+* Config file names are inferred from CL args
+
+  Example: "ASTR PHYS" ==> astr_phys_config.json
+  
+
+* Worksheet title inferred from CL args and "Term" found in input Excel
+
+  Example: "ASTR PHYS" & Term: 2217 = "ASTR PHYS Fall 2021 Schedule"
+
+
+* Attribute row index is located, not assumed
+
+
+* Output Excel filename dynamically generated
+
