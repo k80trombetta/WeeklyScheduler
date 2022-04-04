@@ -1,4 +1,4 @@
-#weeklyScheduler
+# weeklyScheduler
 
 weeklyScheduler is a JavaScript program that generates an Excel file in the form of a graphical weekly schedule.
 
@@ -8,7 +8,7 @@ It extracts data from the input file to generate the output file.
 
 Customized weekly schedules and reports for abnormal course data are generated.
 
-##Usage
+## Usage
 * Install node.js and import node modules into project directory
 
 * To color code sections by Instructor, run
@@ -33,9 +33,9 @@ node.js Fall_2022_CS_Reflist_3.1.22.xlsx "ASTR PHYS" C
 
 
 3. Config files must be located in main directory
-##Notes
+## Notes
 
-###Report Worksheets
+### Report Worksheets
 1. Courses related by auto enroll
     1. Sections in an auto group that are missing the units field, can infer units from 
        a related component.
@@ -49,7 +49,7 @@ node.js Fall_2022_CS_Reflist_3.1.22.xlsx "ASTR PHYS" C
     
     Courses can be drawn to the schedule but also flagged
    
-###Regular Schedule Worksheets
+### Regular Schedule Worksheets
 1. Sections with missing fields
    1. Required fields to be drawn 
       
@@ -70,7 +70,7 @@ node.js Fall_2022_CS_Reflist_3.1.22.xlsx "ASTR PHYS" C
    
    Courses that cannot be matched to an Instructor or Course color will be drawn in gray.
 
-###Flexibility
+### Flexibility
 * Matches department/subject command line arguments to correct tab in input Excel file
   
 
