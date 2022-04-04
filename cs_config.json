@@ -1,0 +1,267 @@
+{
+  "course_colors": {
+    "CS 101": "#8dd3c7",
+    "CS 115": "#ffffb3",
+    "CS 215": "#bebada",
+    "CS 242": "#fb8072",
+    "CS 210": "#80b1d3",
+    "CS 252": "#fdb462",
+    "CS 315": "#b3de69",
+    "CS 351": "#fccde5",
+    "CS 355": "#d9d9d9",
+    "CS 370": "#bc80bd",
+    "CS 415": "#ccebc5",
+    "CS 454": "#ffed6f",
+    "CS 460": "#66c2a5",
+    "CS 450": "#fc8d62",
+    "CS 470": "#8da0cb",
+    "CS 385": "#e78ac3",
+    "CS 115W": "#a6d854",
+    "CS 480": "#ffd92f",
+    "CS XXX": "#e5c494",
+    "CS YYY": "#b3b3b3"
+  },
+  "tabs": [
+    {
+      "name": "Majors",
+      "entries": ["all except", "CS 101"]
+    },
+    {
+      "name":  "CS 101",
+      "entries": ["CS 101"]
+    },
+    {
+      "name": "Majors 2",
+      "entries": ["rest"]
+    },
+    {
+      "name": "LD Courses",
+      "entries": ["CS 115", "CS 115W", "CS 210", "CS 215", "CS 242", "CS 252"]
+    },
+    {
+      "name": "UD Courses",
+      "entries": ["CS 315", "CS 355", "CS 370", "CS 351", "CS 415", "CS 454", "CS 450", "CS 460", "CS 470"]
+    },
+    {
+      "name": "All",
+      "entries": ["all"]
+    }
+  ],
+
+  "instructors": {
+    "Ali Kooshesh": {
+      "color": "#e5c494",
+      "name": "Kooshesh"
+    },
+
+    "KM Sabidur Rahman": {
+      "color": "#ffd92f",
+      "name": "Rahman"
+    },
+
+    "Nina Marhamati": {
+      "color": "#a6d854",
+      "name": "Marhamati"
+    },
+
+    "David Harden": {
+      "color": "#b3b3b3",
+      "name": "Harden"
+    },
+
+    "Suzanne Rivoire": {
+      "color": "#bc80bd",
+      "name": "Rivoire"
+    },
+
+    "Balasubramanian Ravikumar": {
+      "color": "#bebada",
+      "name": "Ravikumar"
+    },
+    "Glenn Carter": {
+      "color": "#fb8072",
+      "name": "Carter"
+    },
+    "Anamary Leal": {
+      "color": "#80b1d3",
+      "name": "Leal"
+    },
+    "George Ledin Jr": {
+      "color": "#fdb462",
+      "name": "Ledin"
+    },
+    "Shubbhi Taneja": {
+      "color": "#b3de69",
+      "name": "Taneja"
+    },
+    "Mark Gondree": {
+      "color": "#fccde5",
+      "name": "Gondree"
+    },
+    "Jeffrey Fisher": {
+      "color": "#d9d9d9",
+      "name": "Fisher"
+    },
+    "Gurman Gill": {
+      "color": "#ffffb3",
+      "name": "Gill"
+    },
+    "Kurt Granborg": {
+      "color": "#ccebc5",
+      "name": "Granborg"
+    },
+    "Christopher Wineland": {
+      "color": "#ffed6f",
+      "name": "Wineland"
+    },
+    "Marshall Jankovsky": {
+      "color": "#66c2a5",
+      "name": "Jankovsky"
+    },
+    "Noah Melcon": {
+      "color": "#8dd3c7",
+      "name": "Melcon"
+    },
+    "Lynn Stauffer": {
+      "color": "#8da0cb",
+      "name": "Stauffer"
+    },
+    "Marcia Watts": {
+      "color": "#e78ac3",
+      "name": "Watts"
+    },
+    "Ying Lin": {
+      "color": "#fc8d62",
+      "name": "Lin"
+    },
+    "Jonathon Thompson": {
+      "color": "b3b3b3",
+      "name": "Thompson"
+    }
+  },
+
+  "labs": [
+    "DARW0024",
+    "DARW0025",
+    "DARW0028",
+    "STEV1034"
+  ],
+
+  "title": "CS Spring 2021 Schedule",
+
+  "wide_entries": [
+     {
+	"title": "CS 390",
+	"meeting_pattern": "TH",
+	"start_time": "12:00 PM",
+	"end_time": "01:00 PM"
+     },
+     {
+	"title": "Department Meeting",
+	"meeting_pattern": "T",
+	"start_time": "12:00 PM",
+	"end_time": "01:00 PM"
+     },
+     {
+	"title": "Lunch With Colloquium Speaker",
+	"meeting_pattern": "TH",
+	"start_time": "01:00 PM",
+	"end_time": "02:00 PM"
+     }
+  ],
+
+
+
+
+
+  "reflist_attributes": [
+    "Term",
+    "Subject",
+    "Catalog",
+    "Section",
+    "Class Nbr",
+    "Comb Sect",
+    "CS Number",
+    "Component",
+    "Min Units",
+    "Max Units",
+    "Consent",
+    "Auto Enrol",
+    "Auto Enr 2",
+    "Designation",
+    "Descr",
+    "Pat",
+    "START TIME",
+    "END TIME",
+    "Req Rm Cap",
+    "Cap Enrl",
+    "Tot Enrl",
+    "Avail Seats",
+    "Wait Tot",
+    "Facil ID",
+    "Capacity",
+    "Instructor ID",
+    "Last",
+    "First Name",
+    "Empl Rcd#",
+    "Work Load",
+    "Auto Enrol",
+    "Acad Group"
+  ],
+
+
+
+  "reflist_db_attributes": [
+    "term",
+    "subject",
+    "catalog",
+    "section",
+    "class_number",
+    "combined_section",
+    "cs_number",
+    "component",
+    "min_units",
+    "max_units",
+    "consent",
+    "auto_enrol1",
+    "auto_enrol2",
+    "ge_designation",
+    "description",
+    "meeting_pattern",
+    "start_time",
+    "end_time",
+    "req_room_capacity",
+    "enrol_capacity",
+    "total_enrolled",
+    "available_seats",
+    "waitlist_size",
+    "facility_name",
+    "room_capacity",
+    "instructor_id",
+    "instructor_lName",
+    "instructor_fName",
+    "instructor_emp_rcd_nbr",
+    "work_load",
+    "auto_enrol",
+    "acad_group"
+  ],
+
+  "editable_attributes": [
+    "Section",
+    "Comb Sect",
+    "Min Units",
+    "Max Units",
+    "Auto Enrol",
+    "Auto Enr 2",
+    "Pat",
+    "START TIME",
+    "END TIME",
+    "Req Rm Cap",
+    "Cap Enrl",
+    "Facil ID",
+    "Instructor ID",
+    "Last",
+    "First Name",
+    "Work Load"
+  ]
+}
